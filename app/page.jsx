@@ -74,7 +74,7 @@ const DATA = {
   resumeUrl: "/Affan_Resume.pdf", // ← Replace with your hosted resume link
   socials: [
     // Add your real links when ready
-    { name: "LinkedIn", url: "www.linkedin.com/in/affan-bhatti-561206311" },
+    { name: "LinkedIn", url: "www.linkedin.com/in/affan-bhatti-561206311"},
   ],
   education: [
     {
@@ -679,26 +679,58 @@ export default function Portfolio() {
         >
           <Card>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
-              <div>
-                <div className="text-sm text-zinc-600 dark:text-zinc-400">Email</div>
-                <button onClick={() => copy(DATA.email)} className="mt-1 font-medium underline-offset-4 hover:underline">
-                  {DATA.email}
-                </button>
+              {/* Email */}
+              <div className="flex items-center gap-3">
+                <img src="/gmail.png" alt="Email" className="w-6 h-6 rounded-md" />
+                <div>
+                  <div className="text-sm">Email</div>
+                  <a
+                    href={`mailto:${DATA.email}`}
+                    className="mt-1 inline-block font-medium underline-offset-4 hover:underline"
+                  >
+                    {DATA.email}
+                  </a>
+                </div>
               </div>
-              <div>
-                <div className="text-sm text-zinc-600 dark:text-zinc-400">Phone</div>
-                <button onClick={() => copy(DATA.phone)} className="mt-1 font-medium underline-offset-4 hover:underline">
-                  {DATA.phone}
-                </button>
+
+              {/* Phone */}
+              <div className="flex items-center gap-3">
+                <img src="/phone.jpg" alt="Phone" className="w-6 h-6 rounded-md" />
+                <div>
+                  <div className="text-sm">Phone</div>
+                  <a
+                    href={`tel:${DATA.phone.replace(/[^+\d]/g, "")}`}
+                    className="mt-1 inline-block font-medium underline-offset-4 hover:underline"
+                  >
+                    {DATA.phone}
+                  </a>
+                </div>
               </div>
-              <div>
-                <div className="text-sm text-zinc-600 dark:text-zinc-400">Socials</div>
-                <div className="mt-1 flex flex-wrap gap-3 text-sm">
-                  {DATA.socials.map((s) => (
-                    <a key={s.name} href={s.url} className="underline-offset-4 hover:underline">
-                      {s.name}
-                    </a>
-                  ))}
+
+              {/* Socials (LinkedIn, etc.) */}
+              <div className="flex items-center gap-3">
+                {/* If you only have LinkedIn, keep this img.
+                    If you added logos per social in DATA, use the map below instead. */}
+                <img src="/linkedin.png" alt="LinkedIn" className="w-6 h-6 rounded-md" />
+                <div>
+                  <div className="text-sm">Socials</div>
+                  <div className="mt-1 flex flex-wrap items-center gap-3 text-sm">
+                    {DATA.socials.map((s) => (
+                      <a
+                        key={s.name}
+                        href={s.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium underline-offset-4 hover:underline flex items-center gap-2"
+                      >
+                        {/* Use per-item logo if you added it in DATA */}
+                        {s.logo ? (
+                          <img src={s.logo} alt={`${s.name} logo`} className="w-5 h-5 rounded-md" />
+                        ) : null}
+                        <span>{s.name}</span>
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
