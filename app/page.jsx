@@ -71,7 +71,7 @@ const DATA = {
   location: "Mississauga, ON",
   email: "affanbhattizemail@gmail.com",
   phone: "(289) 946-2211",
-  resumeUrl: "/Affan_Resume.pdf", // ← Replace with your hosted resume link
+  resumeUrl: "/Affan_Bhatti_Resume.pdf", // ← Replace with your hosted resume link
   socials: [
     // Add your real links when ready
     { name: "LinkedIn", url: "www.linkedin.com/in/affan-bhatti-561206311"},
