@@ -98,11 +98,24 @@ const DATA = {
     },
   ],
   experience: [
+
+    {
+      company: "Freelance",
+      title: "Software Developer",
+      location: "Toronto, ON",
+      period: "Apr 2025 - Present",
+      bullets: [
+   "Build custom websites and software solutions that align with each client’s goals and technical requirements.",
+   "Enhance existing websites and applications by adding new features, improving performance, and resolving issues.",
+   "Work closely with clients throughout the entire project lifecycle, gathering requirements, translating ideas into technical plans, and providing ongoing guidance and support.",
+   "Manage multiple client projects simultaneously, overseeing development, testing, deployment, and post‑launch improvements to ensure high‑quality, reliable results."
+],
+    },
     {
       company: "Kustomade Renovations",
       title: "Social Media Content Manager",
       location: "Toronto, ON",
-      period: "Jul 2024 – Present",
+      period: "Jul 2024 – May 2025",
       bullets: [
   "Develop and maintain content calendars to showcase renovation projects and services across multiple platforms.",
   "Create engaging posts and stories that highlight before-and-after transformations, boosting brand visibility.",
@@ -465,7 +478,7 @@ export default function Portfolio() {
         >
           <Card className="md:col-span-2">
             <p className="leading-relaxed text-zinc-700 dark:text-zinc-300">
-              I’m a Software Developer with a foundation in Computer Science and Physics, where I focus on building clean, high-performing systems and interfaces that feel natural to use. Alongside my work in technology, I’m deeply interested in astronomy, exploring the universe through both theoretical and observational research. I’m also building my knowledge in Economics, developing a strong grounding in fundamentals such as strategy, management, and innovation. My experience as a full-time student athlete taught me discipline, resilience, and how to perform under pressure, which are qualities I carry into every area of my work.
+              I’m a Software Developer with a foundation in Computer Science and Economics, where I focus on building clean, high-performing systems and interfaces that feel natural to use. Alongside my work in technology, I’m deeply interested in Economics, developing a strong grounding in fundamentals such as strategy, management, and innovation. I’m also building my knowledge in astronomy, exploring the universe through both theoretical and observational research. My experience as a full-time student athlete taught me discipline, resilience, and how to perform under pressure, which are qualities I carry into every area of my work.
             </p>
           </Card>
           <Card>
