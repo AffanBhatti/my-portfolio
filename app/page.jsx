@@ -70,7 +70,7 @@ const DATA = {
   tagline: "Honours BSc — Computer Science & Economics (UofT) · Research in Astronomy",
   location: "Mississauga, ON",
   email: "affanbhattizemail@gmail.com",
-  phone: "(289) 946-2211",
+  phone: "(437) 445-3315",
   resumeUrl: "/Affan_Bhatti_Resume.pdf", // ← Replace with your hosted resume link
   socials: [
     // Add your real links when ready
