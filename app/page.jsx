@@ -67,7 +67,7 @@ const Reveal = ({ children, i = 0, dir = "up" }) => (
 const DATA = {
   name: "Affan Bhatti",
   role: "Software Developer @ University of Toronto",
-  tagline: "Honours BSc — Computer Science & Astronomy (UofT) · Minor in Business, Science & Entrepreneurship",
+  tagline: "Honours BSc — Computer Science & Economics (UofT) · Research in Astronomy",
   location: "Mississauga, ON",
   email: "affanbhattizemail@gmail.com",
   phone: "(289) 946-2211",
@@ -80,11 +80,11 @@ const DATA = {
     {
       school: "University of Toronto",
       degree:
-        "Honours Bachelor of Science — Computer Science & Astronomy; Minor in Business, Science & Entrepreneurship",
+        "Honours Bachelor of Science — Computer Science & Economics; Research in Astronomy",
       period: "Sept 2024 – Apr 2028",
       logo: "/uoft.jpg",
       details: [
-        "Courses: Computer Science/Programming, Diffrential & Integral Calculus, Discrete Math, Princples of Physics, Astronomy, University level Writing, Linear Algebra,"
+        "Courses: Computer Science/Programming, Diffrential & Integral Calculus, Discrete Math, Princples of Physics, Astronomy, University level Writing, Linear Algebra, Economics"
       ],
     },
     {
@@ -465,14 +465,14 @@ export default function Portfolio() {
         >
           <Card className="md:col-span-2">
             <p className="leading-relaxed text-zinc-700 dark:text-zinc-300">
-              I’m a Software Developer with a foundation in Computer Science and Physics, where I focus on building clean, high-performing systems and interfaces that feel natural to use. Alongside my work in technology, I’m deeply interested in astronomy, exploring the universe through both theoretical and observational research. I’m also building my knowledge in business and entrepreneurship, developing a strong grounding in fundamentals such as strategy, management, and innovation. My experience as a full-time student athlete taught me discipline, resilience, and how to perform under pressure, which are qualities I carry into every area of my work.
+              I’m a Software Developer with a foundation in Computer Science and Physics, where I focus on building clean, high-performing systems and interfaces that feel natural to use. Alongside my work in technology, I’m deeply interested in astronomy, exploring the universe through both theoretical and observational research. I’m also building my knowledge in Economics, developing a strong grounding in fundamentals such as strategy, management, and innovation. My experience as a full-time student athlete taught me discipline, resilience, and how to perform under pressure, which are qualities I carry into every area of my work.
             </p>
           </Card>
           <Card>
             <div className="space-y-3 text-sm">
               <div className="font-semibold">Focus Areas</div>
               <div className="flex flex-wrap gap-2">
-                {["Software Development", "Data Structures & Algorithms", "AI & Machine learning", "Scientific Computing", "Astrophysics & Cosmology", "Observational Astronomy", "Data Analysis & Visualization", "Entrepreneurship & Innovation", "Business Strategy & Technology Management"].map((t) => (
+                {["Software Development", "Data Structures & Algorithms", "AI & Machine learning", "Scientific Computing", "Astrophysics & Cosmology", "Observational Astronomy", "Data Analysis & Visualization", "Entrepreneurship & Innovation", "Business Strategy & Technology Management", "Economics"].map((t) => (
                   <Badge key={t}>{t}</Badge>
                 ))}
               </div>
